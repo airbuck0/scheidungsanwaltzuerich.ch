@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://scheidungsanwaltzuerich.ch/sitemap.xml
