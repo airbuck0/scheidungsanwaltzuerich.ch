@@ -1,0 +1,7 @@
+{
+  "name": "scheidungsanwaltzuerich",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mkdir -p dist && cp *.html *.txt *.xml dist/"
+  }
+}
