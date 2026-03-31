@@ -45,10 +45,11 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LegalService",
+        "@type": "Attorney",
         "name": "Scheidungsanwalt Zürich",
         "description": "Ihr erfahrener Anwalt für Scheidung, Trennung, Sorgerecht und Unterhalt in Zürich.",
         "url": "https://scheidungsanwaltzuerich.ch",
+        "image": "https://scheidungsanwaltzuerich.ch/og-image.jpg",
         "areaServed": {
             "@type": "City",
             "name": "Zürich"
@@ -56,10 +57,85 @@
         "priceRange": "CHF",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Dufourstrasse 48",
+            "postalCode": "8008",
             "addressLocality": "Zürich",
             "addressRegion": "ZH",
             "addressCountry": "CH"
-        }
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 47.3545,
+            "longitude": 8.5530
+        },
+        "telephone": "+41 44 499 05 04",
+        "email": "kontakt@scheidungsanwaltzuerich.ch",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            }
+        ],
+        "sameAs": []
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine Scheidung in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein einvernehmliches Verfahren dauert in der Regel 2-4 Monate. Bei einem strittigen Verfahren kann es nach einer zweijährigen Trennungszeit 6-18 Monate dauern."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet das Verfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten hängen von der Komplexität Ihres Falls ab. Ein einvernehmliches Verfahren ist deutlich günstiger als ein strittiges. In einem kostenlosen Erstgespräch geben wir Ihnen eine transparente Kostenschätzung mit Pauschalpreisen oder Ratenzahlung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich rechtliche Vertretung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Rechtlich ist eine Vertretung nicht zwingend, aber dringend empfohlen. Ohne professionelle Beratung riskieren Sie, wichtige Ansprüche zu übersehen - insbesondere bei Unterhalt, Sorgerecht und Vermögensteilung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem gemeinsamen Haus?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Immobilie wird im Rahmen der vermögensrechtlichen Aufteilung berücksichtigt. Möglichkeiten sind: Übernahme durch einen Partner, Verkauf und Aufteilung des Erlöses, oder eine vorübergehende Nutzungsregelung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird das Sorgerecht für die Kinder geregelt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In der Schweiz gilt seit 2014 grundsätzlich das gemeinsame Sorgerecht. Das Gericht kann in Ausnahmefällen das alleinige Sorgerecht einem Elternteil zuteilen. Das Kindeswohl steht dabei immer im Zentrum."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Geht es auch ohne Trennungsjahr?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei einem einvernehmlichen Verfahren ist keine Trennungszeit erforderlich. Nur bei einem einseitigen strittigen Verfahren muss eine zweijährige Trennungszeit nachgewiesen werden."
+                }
+            }
+        ]
     }
     </script>
 </head>
@@ -190,8 +266,8 @@
                         </div>
 
                         <div class="mt-4 text-center">
-                            <a href="tel:+41445001234" class="text-sm text-navy font-medium hover:text-gold transition">
-                                oder direkt anrufen: +41 44 500 12 34
+                            <a href="tel:+41444990504" class="text-sm text-navy font-medium hover:text-gold transition">
+                                oder direkt anrufen: +41 44 499 05 04
                             </a>
                         </div>
                     </form>
@@ -679,11 +755,11 @@
             </form>
 
             <div class="mt-12 text-center flex flex-col sm:flex-row gap-6 justify-center items-center text-lg">
-                <a href="tel:+41445001234" class="flex items-center gap-2 hover:text-gold transition">
+                <a href="tel:+41444990504" class="flex items-center gap-2 hover:text-gold transition">
                     <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                     </svg>
-                    +41 44 500 12 34
+                    +41 44 499 05 04
                 </a>
                 <a href="mailto:info@scheidungsanwaltzuerich.ch" class="flex items-center gap-2 hover:text-gold transition">
                     <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 20 20">
@@ -720,14 +796,15 @@
                 <div>
                     <h4 class="font-semibold text-white mb-4">Kontakt</h4>
                     <ul class="space-y-2 text-sm">
-                        <li>Zürich, Schweiz</li>
-                        <li>+41 44 500 12 34</li>
-                        <li>E-Mail auf Anfrage</li>
+                        <li>Dufourstrasse 48</li>
+                        <li>8008 Zürich</li>
+                        <li><a href="tel:+41444990504" class="hover:text-gold transition">+41 44 499 05 04</a></li>
+                        <li><a href="mailto:kontakt@scheidungsanwaltzuerich.ch" class="hover:text-gold transition">kontakt@scheidungsanwaltzuerich.ch</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
-                <p>&copy; 2025 | <a href="impressum.html" class="hover:text-gold transition">Impressum</a> | <a href="datenschutz.html" class="hover:text-gold transition">Datenschutz</a></p>
+                <p>&copy; 2026 | <a href="impressum.html" class="hover:text-gold transition">Impressum</a> | <a href="datenschutz.html" class="hover:text-gold transition">Datenschutz</a></p>
             </div>
         </div>
     </footer>
